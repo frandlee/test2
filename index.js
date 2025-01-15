@@ -5,6 +5,7 @@ const fs = require('fs');
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// test
 // Vulnerable database connection string (hardcoded sensitive information)
 mongoose.connect('mongodb://admin:password@localhost:27017/vulnerableDB', {
     useNewUrlParser: true,
